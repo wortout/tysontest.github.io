@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+} 
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav, footer, header, aside{display: block;}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 25px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button,textarea{font-family: :inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1, h2, h3, h4, h5,h6{font-size: inherit;font-weight: 400;}
+/*------------------------------*/
+
+
+
+
+body{
+    background: linear-gradient(90deg, rgba(122,107,114,1) 22%, rgba(79,89,102,1) 49%, rgba(99,114,133,1) 76%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.block{
+    border: 3px solid rgba(99, 93, 93, 0.767);
+    border-radius: 40px;
+    max-width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(50% - 350px);
+    background: linear-gradient(90deg, rgb(90, 79, 84) 22%, rgb(48, 55, 63) 49%, rgb(70, 80, 94) 76%);
+    transform: scale();
+    transition: transform 2s;
+}
+.block:active{
+    
+}
+.block__text{
+    text-align: center;
+    margin: 50px 0 0 0;
+    color: rgb(190, 190, 190);
+    transition: all 700ms;
+}
+.block__text:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+}
+.block__color{
+    margin: 60px 0 0 300px;
+    width: 500px;
+    height: 500px;
+}
+.block__form-input{
+    width: 200px;
+    background: rgb(148, 146, 146);
+    height: 100px;
+    border-radius: 6px;
+    transition: all 1s;
+}
+.block__form-input:hover{
+    background: rgb(61, 61, 61);
+    transform: scale(1.2);
+}
+.block__form-input:active{
+    background:rgb(0, 0, 0);
+    transition-duration: 50ms;
+}
+.block__form-btn{
+    margin: 30px 0 0 30px;
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;
+    transition: all 1s;
+}
+.block__form-btn:hover{
+    transform: scale(1.2);
+    background:rgb(161, 159, 159);
+    color: rgb(20, 20, 20);
+}
+.block__form-btn:active{
+    background:rgb(34, 34, 34);
+    color: whitesmoke;
+    transition-duration: 200ms;    
+}
